@@ -1,4 +1,4 @@
-package com.philf.acconts;
+package com.philf.accounts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
