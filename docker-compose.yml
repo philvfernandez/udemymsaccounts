@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  account:
+    image: philvfernandez/account:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - phil-dev-network
+
+  loans:
+    image: philvfernandez/loans:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - phil-dev-network
+
+  cards:
+    image: philvfernandez/cards:latest
+    mem_limit: 700m
+    ports:
+      - "9000:9000"
+    networks:
+      - phil-dev-network
+networks:
+    phil-dev-network:
